@@ -11,6 +11,7 @@ function downloadpromise() {
 let downloadfile = downloadpromise()
 
 //this is away to exec then function after some time when promise is resolved
+// Agar Ek promise reslove ho jaye uspe tum kabhi bhi ek baar then fn call kar sakta ho. not necessary ki compulsory
 setTimeout(() => {
     downloadfile.then(() => {
         console.log("After Download")
