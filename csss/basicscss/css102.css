@@ -1,0 +1,22 @@
+.sme{
+    margin: 40px;
+    padding: 20px;
+    border: dashed black 5px;
+
+}
+*{
+    text-align: center;
+    color: burlywood;
+    font-size: 15pt;
+}
+
+#div1{
+    background-color: royalblue;
+
+}
+#div2{
+    background-color: seagreen;
+}
+#div3{
+    background-color: lightcyan;
+}

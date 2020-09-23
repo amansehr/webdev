@@ -1,0 +1,4 @@
+block element
+inline element
+
+div -- simple block element and span -- simple inline element

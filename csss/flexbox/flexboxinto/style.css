@@ -1,0 +1,24 @@
+.container{
+    margin: 50px;
+    background-color: burlywood;
+    border: dotted black 3px;
+    height:400px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    justify-content: space-around; /* how items within a row are aligned in order */
+
+    align-items: baseline; /* align items within row perpendicularly */
+    align-content: flex-start;/* how all the rows together are aligned */
+}
+
+.items{
+    margin: 20px;
+    color: red;
+    font-size: 15pt;
+    background-color: blanchedalmond;
+    height: 50px;
+    width: 50px;
+
+}

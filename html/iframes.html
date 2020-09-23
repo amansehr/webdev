@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <h1>iFrames</h1>
+        <ol>
+            <li><a target="frame1" href="./basics.html"> links</a></li> <!-- yha target me iframe ka name dal sakta h id nhi and ye iframe me open hoga link.-->
+        </ol>
+        <iframe name="frame1" width="400" height="500" src="./link.html"></iframe> <br>
+        <iframe frameborder="0" width="400" height="500" src="./basics.html"></iframe> <!--
+            we can use border command to make border invisible -->
+        <h1>embedding external page </h1>
+        <iframe frameborder="0" width="400" height="400" src="http://example.com"></iframe><!-- iframes are inline element -->
+
+        <iframe src="./basics.html"></iframe> 
+        <!-- ye basics.html me ek link ka target parent h iska matlab voh iframe me nhi balki vaha khula gha kisna iframe ko apna under call kiya h-->
+</body>
+</html>

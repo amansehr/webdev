@@ -1,0 +1,28 @@
+.para{
+    height: 50px;
+    width: 70px;
+    background-color: royalblue;
+    padding: 10px;
+
+}
+
+.para:hover{
+    font-weight: bold;
+    background-color: saddlebrown;
+    font-size: 18pt;
+    height: 100px;
+    width: 100px;
+}
+
+.para:active{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 200px;
+    width: 200px;
+    background-color: red;
+}
+
+input:focus{
+    font-size: larger;
+    height: 100px;
+    width: 100px;
+}

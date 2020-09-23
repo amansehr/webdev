@@ -1,0 +1,50 @@
+.container{
+    margin: 50px;
+    height: 450px;
+    padding: 10px;
+    z-index: 1;
+}
+
+.items{
+    background-color: lightcoral;
+    margin: 50px;
+    height: 30px;
+    width: 35px;
+    text-align: center;
+    z-index: 3;
+}
+
+/*  relative : from original position 
+    absolute : from parent 
+    fixed : from window
+    sticky : based on user scroll postition.
+    by setting up the z-index we can decide ki object se move hoga ya nicha se .it can be done only when elements are positioned 
+*/
+.one > .four{
+    position: absolute;
+    left: 100px;
+    top: 100px;
+
+}
+.one > .five{
+    position: fixed;
+    left: 100px;
+    top: 100px;
+}
+
+.one > .one{
+    position: sticky;
+    top: 30px;
+    z-index: -1;
+}
+.container > .three{
+    position: relative;
+    z-index: -5;
+}
+.items:nth-child(3n){
+    background-color: red;
+}
+
+.container:nth-child(2n){
+    background-color: burlywood;
+}

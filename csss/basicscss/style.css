@@ -1,0 +1,37 @@
+* {
+    color : green;
+}
+
+body{
+    margin-top: 100px;
+}
+
+div {
+    margin-left: 50px;
+}
+
+p {
+    font-size: 30px;
+}
+#p2 {
+    font-family: "Courier";
+}
+
+#p3 {
+    margin-left: 20px;
+}
+
+.osmpara{
+    background-color: grey;
+}
+
+.bigpara {
+    background-color: blue;
+}
+[disabled]{
+    font-size:21pt;   
+    height: 50px;
+}
+input [type="text"]{
+    color: red;
+}

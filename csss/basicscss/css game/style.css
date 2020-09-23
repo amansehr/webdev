@@ -1,0 +1,76 @@
+.container{
+    margin: auto;
+    margin-top: 50px;
+    border: double black 2px;
+    height: 650px;
+    width: 600px;
+    padding: 20px;
+    align-self: center;
+    box-shadow: black 20px 20px 20px;
+}
+.player{
+    margin: 50px;
+    background-color: blue;
+    border: dashed black 2px;
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+    transform: translateY(250px);
+    animation-name: move;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-play-state: paused;
+}
+
+.against{
+    margin: 50px;
+    background-color:red;
+    border: dashed black 2px;
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+    animation-name: bounce;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+
+}
+.container:active .player{
+    animation-play-state: running;
+}
+.two{
+    animation-timing-function: ease-in;
+
+}
+
+
+.two{
+    animation-timing-function: ease-in-out;
+
+}
+
+
+@keyframes bounce{
+    0%{
+
+    }
+    50%{
+        transform: translateY(500px);
+    }
+    100%{
+
+    }
+}
+
+
+@keyframes move{
+    0%{
+
+    }
+    50%{
+        transform: translate(450px,250px);
+    }
+    100%{
+
+    }
+}

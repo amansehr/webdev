@@ -1,0 +1,29 @@
+.container{
+    background-color: rosybrown;
+    margin: 50px;
+    border: dotted lightblue 3px;
+    height: 500px;
+    width: 200px;
+}
+
+
+@media (min-width : 400px){
+    .container{
+        background-color: lightgrey;
+    }
+}
+
+
+@media (min-width : 800px){
+    .container{
+        background-color: lightgrey;
+    }
+}
+
+
+@media (min-width : 1200px){
+    .container{
+        background-color: red;
+    }
+}
+

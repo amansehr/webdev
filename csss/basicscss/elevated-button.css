@@ -1,0 +1,29 @@
+.di{
+    margin: 50px;
+    padding: 30px;
+    padding-top: 60px;
+    color: blue;
+    background-color: chartreuse;
+    height: 100px;
+    width: 250px;
+    text-align: center;
+    font-size: 35pt;
+    border: dotted black 3px;
+    box-shadow: rgb(99, 86, 86) 20px 20px 20px;
+    border-radius: 10px; /* boundary ko curve kar de gha */
+    transition: 0.4s;
+}
+
+.di:hover{
+    transform: translate(10px,-10px);
+    box-shadow: rgb(99,86,86) 30px 30px 20px;
+
+}
+
+.di:active{
+    transform: translate(5px,5px);
+    box-shadow: rgb(99, 86, 86) 5px 5px 20px;
+    transition: transform 0.2s,box-shadow 0.6s; /* Asha bhi use kar sakhta h*/
+}
+
+
