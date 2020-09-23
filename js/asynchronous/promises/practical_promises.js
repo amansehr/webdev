@@ -19,12 +19,15 @@ function resize(filename) {
         else { // ! Fake resize task
             setTimeout(() => {
                 let resizedfile = filename.split('.')[0] + "resized" + "png"
+
                 resolve(resizedfile)
             });
         }
     })
 }
 
+//same way can write same fake upload function
+//resolve ki value can be passed to then function jacha nicha ki h
 download('http://cb.lk/logo.png').then((filename) => {
     resize(filename).then((resizedfile) => {
         console.log("Resize file is at : " + resizedfile)
@@ -37,3 +40,6 @@ download('http://cb.lk/logo.png').then((filename) => {
 //  download('http://cb.lk/logo.png').then(resize).then((resizedfile) => {
 //     console.log("Resize file is at : " + resizedfile)
 // })
+
+
+//agar humna promise.all() me ek se jadha argument pass kiya h or koi ek error deta h toh catch function chala gha then function nhi
