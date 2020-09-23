@@ -24,7 +24,7 @@ function tooglebuttons() {
     btnadd.prop('disabled', inptask.val() == '')
     btnreset.prop('disabled', inptask.val() == '')
     let b = $('#ullist .disable').length
-    let a = - b
+    let a = ulid.children().length - b
     btnclear.prop('disabled', b <= 0)
     b <= 0 || a <= 0 ? btnsort.prop('disabled', true) : btnsort.prop('disabled', false)
 
