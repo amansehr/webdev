@@ -43,3 +43,13 @@ download('http://cb.lk/logo.png').then((filename) => {
 
 
 //agar humna promise.all() me ek se jadha argument pass kiya h or koi ek error deta h toh catch function chala gha then function nhi
+
+Promise.all([
+    download('http://cb.lk/logo.png'),
+    download('http://cb.lk/logo.png'),
+    download('http://cb.lk/logo.png')
+]).then((downloadvalues) => {
+    return Promise.all(downloadvalues.map(resize))
+}).catch((e) => {
+    console.error(e)
+})
