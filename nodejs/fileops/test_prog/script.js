@@ -13,7 +13,10 @@ fs.readFile(__dirname + '/input.txt', (err, data) => {
         }
         return acc
     }, {})
-
-    console.log(res)
+    console.log(JSON.stringify(res))
+    fs.writeFile(__dirname + "/output.txt", JSON.stringify(res), (err) => {
+        if (err) throw err
+        console.log("Added data to output file")
+    })
 })
 
