@@ -1,0 +1,3 @@
+$(() => {
+    fetchProducts(done)
+})
