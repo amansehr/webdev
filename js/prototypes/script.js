@@ -57,7 +57,7 @@ console.log(typeof bool)
 console.log(typeof x)
 //prototype wali inherit vo datatype ko maintain kara jaruri nhi h
 //is .__proto__ (1) is not same as .prototype (2)
-// (1) ye ush ko pomit kara gha jisha inherit kiya h
+// (1) ye ush ko point kara gha jisha inherit kiya h
 // (2) ye default chej h, jiska js me jo kuch bhi hm kar te h vo insse inherit hoti h
 //oop nature is driven using prototype
 // we can change how default class in js behave going into their proto type eg ;
